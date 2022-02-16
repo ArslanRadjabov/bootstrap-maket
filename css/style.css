@@ -11,5 +11,158 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(120deg, rgba(218, 225, 244, 1) 55%, rgba(168, 181, 200, 1) 55%);;
+}
+.register{
+  display: flex;
+  padding: 50px 0;
+}
+.register__main{
+  position: relative;
+  padding: 30px;
+}
+.register__logo{
+  color: #58689C;
+  margin-bottom: 50px;
+}
+.register__logo::after{
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #47B88C;
+  border-left: none;
+  position: relative;
+  left: -40px;
+  top: 15px;
+}
+.type-departure{
+  /* position: relative; */
+  left: -28px;
+  padding: 20px 33px;
+  background-color: #fff;
+  margin-bottom: 50px;
+  margin: 0 auto;
+}
+.type-departure:focus{
+  background-color: #47B88C;
+}
+.types-transport{
+  font-size: 30px;
+  color: rgb(102, 97, 97);
+}
+.type-departure:focus .types-transport{
+  color: #fff;
+}
+.input-group{
+  flex-wrap: nowrap;
+}
+.data-input{
+  border: 1px solid rgb(214, 211, 211);
+  width: 120px;
+}
+.data-input:focus{
+  outline: none;
+}
+.data-input-arrive{
+  margin-left: 15px;
+}
+.class-input{
+  width: 150px;
+  border: 1px solid rgb(201, 195, 195);
+  border-left: none;
+}
+.class-input-2{
+ width: 80px;
+ border: 1px solid rgb(201, 197, 197);
+  border-left: none;
+}
+.class-input-2:focus{
+  outline: none;
+}
+.class-input:focus{
+  outline: none;
+  border-left: none;
+}
+.btn-group {
+  margin: 20px;
+  margin: 0 auto;
+  /* border-radius: 25px; */
+  border: none;
+  color: rgb(146, 140, 140);
+
+}
+.result{
+  max-width: 800px;
+  padding-left: 50px;
+  background-color: #E8F1FA;
+}
+.result__header{
+  display: flex;
+  justify-content: space-between;
+}
+.types-flight{
+  /* margin-left: 200px; */
+}
+.type-group{
+  position: relative;
+  left: 60px;
+  top: 20px;
+}
+.fly-cards{
+  display: flex;
+  width: 90%;
+  height: 90px;
+  background-color: #fff;
+  box-shadow: 7px 7px 39px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.airweays-img{
+
+  position: relative;
+  top: 13px;
+  left: 20px;
+}
+.fly-card__text{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  border-right: 2px solid rgb(204, 203, 203);
+}
+.fly-card__info{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  /* position: relative;
+  left: 300px; */
+}
+p{
+  color: #58689C;
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+h2{
+  color: #58689C;
 }
 
+
+@media screen and (max-width: 556px) {
+  .fly-cards{
+    flex-direction: column;
+    height: 100%;
+  }
+  .register{
+    flex-direction: column;
+  }
+  .result__header{
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .btn-group{
+  }
+}

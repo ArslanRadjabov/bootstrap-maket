@@ -7,13 +7,248 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link rel="stylesheet" href="css/col.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <section class="main">
+    <div class="container">
+      <div class="register">
+        <div class="register__main col-lg-4 bg-light">
+          <h2 class="register__logo fs-3">Ticket4U</h2>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-border border-light type-departure "><i
+                class='fs-4 types-transport bx bxs-plane'></i></button>
+            <button type="button" class="btn btn-border border-light type-departure "><i
+                class='fs-4 types-transport bx bxs-train'></i></button>
+            <button type="button" class="btn btn-border border-light type-departure "><i
+                class='fs-4 types-transport bx bxs-ship'></i></button>
+            <button type="button" class="btn btn-border border-light type-departure "><i
+                class='fs-4 types-transport bx bx-car'></i></button>
+          </div>
+          <h2 class="fs-4 mb-3">Best flight deals width</h2>
+          <h2 class="fs-3 mb-5">Tickets4U</h2>
+          <label for="basic-url" class="form-label">Depart from</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"><i class='bx bxs-plane-take-off fs-4'
+                style='color:#b7afaf'></i></span>
+            <input type="text" class="form-control d-inline-block p-2" id="basic-url" aria-describedby="basic-addon3"
+              placeholder="Uzbekistan - Airways,Tashkent">
+          </div>
+          <label for="basic-url" class="form-label">Arrive at</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"><i class='bx bxs-plane-land fs-4'
+                style='color:#b7afaf'></i></span>
+            <input type="text" class="form-control d-inline-block p-2" id="basic-url" aria-describedby="basic-addon3"
+              placeholder="Russian - Airways,Russian">
+          </div>  
+          <div class="date d-flex">
+            <div>
+              <label for="basic-url" class="form-label">Departure date</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text bg-white" id="basic-addon1"><i class='bx bx-calendar bg-white'
+                    style='color:#b9b0b0'></i></span>
+                <input type="text" class="d-inline-block p-2 data-input" id="basic-url" aria-describedby="basic-addon3"
+                  placeholder="dd/mm/yyyy">
+              </div>
+            </div>
+            <div class="data-input-arrive">
+              <label for="basic-url" class="form-label">Arrive date</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text bg-white" id="basic-addon1"><i class='bx bx-calendar bg-white'
+                    style='color:#b9b0b0'></i></span>
+                <input type="text" class="d-inline-block p-2 data-input" id="basic-url" aria-describedby="basic-addon3"
+                  placeholder="dd/mm/yyyy">
+              </div>
+            </div>
+          </div>
+          <div class="class d-flex">
+            <div>
+              <label for="basic-url" class="form-label">Class</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text bg-white" id="basic-addon1"><i class='bx bx-calendar bg-white'
+                    style='color:#b9b0b0'></i></span>
+                <input type="text" class="d-inline-block p-2 class-input" id="basic-url" aria-describedby="basic-addon3"
+                  placeholder="Economy">
+              </div>
+            </div>
+            <div class="data-input-arrive">
+              <label for="basic-url" class="form-label">Passangers</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text bg-white" id="basic-addon1"><i class='bx bxs-user bg-white'></i></span>
+                <input type="number" class="d-inline-block p-2 class-input-2" id="basic-url" aria-describedby="basic-addon3"
+                  placeholder="2">
+              </div>
+            </div>
+          </div>
+          <div class="d-grid">
+            <button class="btn btn-primary text-uppercase p-2" type="button">Find flight</button>
+          </div>
+        </div>
+        <div class="col-md-8 result">
+          <div class="result__header d-flex">
+            <div class="col-lg-6 f-column">
+              <h2>
+                Search results
+              </h2>
+              <p>we found 15 results</p>
+            </div>
+            <div class="type-group col-lg-6">
+              <button type="button" class="types-fly btn btn-primary btn-sm text-uppercase">cheapest</button>
+              <button type="button" class="types-fly btn btn-primary btn-sm text-uppercase">Fastest</button>
+              <button type="button" class="types-fly btn btn-primary btn-sm text-uppercase">Recommended</button>
+            </div>
+          </div>
+          <h2>Tashkent -> Russian</h2>
+          <div class="fly-cards  col-sm-12">
+            <img class="airweays-img" src="img/british-airways-logo-1.png" alt="" width="120" height="50">
+           <div class="fly-card__info">
+            <div class="fly-card__text">
+              <p>Depart</p>
+              <p>11/02/2022</p>
+              <p>11:22 AM</p>
+            </div>
+            <div class="fly-card__text">
+              <p class="steps btn-sm">0 Steps</p>
+              <p class="steps">10 hours 22 min</p>
+            </div>
+            <div class="fly-card__text">
+              <p>Arrive</p>
+              <p>11/02/2022</p>
+              <p>11:22 AM</p>
+            </div>
+            <div class=" fly-card__text">
+              <p>Price</p>
+              <h2>$856</h2>
+            </div>
+           </div>
+          </div>
+          <div class="fly-cards  col-sm-12">
+            <img class="airweays-img" src="img/flydubai-logo.png" alt=""  >
+           <div class="fly-card__info">
+            <div class="fly-card__text">
+              <p>Depart</p>
+              <p>11/02/2022</p>
+              <p>11:22 AM</p>
+            </div>
+            <div class="fly-card__text">
+              <p class="steps btn-sm">0 Steps</p>
+              <p class="steps">10 hours 22 min</p>
+            </div>
+            <div class="fly-card__text">
+              <p>Arrive</p>
+              <p>11/02/2022</p>
+              <p>11:22 AM</p>
+            </div>
+            <div class=" fly-card__text">
+              <p>Price</p>
+              <h2>$856</h2>
+            </div>
+           </div>
+          </div>
+          <div class="fly-cards  col-sm-12">
+            <img class="airweays-img" src="img/Aeroflot-Logo.wine.png" alt=""  >
+           <div class="fly-card__info">
+            <div class="fly-card__text">
+              <p>Depart</p>
+              <p>11/02/2022</p>
+              <p>11:22 AM</p>
+            </div>
+            <div class="fly-card__text">
+              <p class="steps btn-sm">0 Steps</p>
+              <p class="steps">10 hours 22 min</p>
+            </div>
+            <div class="fly-card__text">
+              <p>Arrive</p>
+              <p>11/02/2022</p>
+              <p>11:22 AM</p>
+            </div>
+            <div class=" fly-card__text ">
+              <p>Price</p>
+              <h2>$856</h2>
+            </div>
+           </div>
+          </div>
+          <div class="fly-cards  col-sm-12">
+            <img class="airweays-img" src="img/flydubai-logo.png" alt=""  >
+           <div class="fly-card__info">
+            <div class="fly-card__text">
+              <p>Depart</p>
+              <p>11/02/2022</p>
+              <p>11:22 AM</p>
+            </div>
+            <div class="fly-card__text">
+              <p class="steps btn-sm">0 Steps</p>
+              <p class="steps">10 hours 22 min</p>
+            </div>
+            <div class="fly-card__text">
+              <p>Arrive</p>
+              <p>11/02/2022</p>
+              <p>11:22 AM</p>
+            </div>
+            <div class=" fly-card__text">
+              <p>Price</p>
+              <h2>$856</h2>
+            </div>
+           </div>
+          </div>
+          <div class="fly-cards  col-sm-12">
+            <img class="airweays-img" src="img/Uzbekistan_Airways_logo.svg.png" alt="" width="150" height="50">
+           <div class="fly-card__info">
+            <div class="fly-card__text">
+              <p>Depart</p>
+              <p>11/02/2022</p>
+              <p>11:22 AM</p>
+            </div>
+            <div class="fly-card__text">
+              <p class="steps btn-sm">0 Steps</p>
+              <p class="steps">10 hours 22 min</p>
+            </div>
+            <div class="fly-card__text">
+              <p>Arrive</p>
+              <p>11/02/2022</p>
+              <p>11:22 AM</p>
+            </div>
+            <div class=" fly-card__text">
+              <p>Price</p>
+              <h2>$856</h2>
+            </div>
+           </div>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
 
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
